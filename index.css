@@ -12,14 +12,6 @@
     font-size: 30px;
 }
 
-@media screen and (max-width: 480px) {
-    #nav-title {
-        bottom: 6px;
-        font-size: 20px;
-        position: relative;
-    }
-}
-
 .overlay {
     background: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -60,4 +52,21 @@
      your background is light. */
     
     color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    #feature-title {
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #feature-title {
+        font-size: 30px;
+    }
+    #nav-title {
+        bottom: 6px;
+        font-size: 20px;
+        position: relative;
+    }
 }
