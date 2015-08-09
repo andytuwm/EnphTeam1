@@ -8,6 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>ENPH253 Team 1 Final Report</title>
 
+    <!-- Roboto -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -19,7 +21,7 @@
 
     <!-- Material Design Lite css and js -->
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue-red.min.css" />
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js" async></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Include custom css-->
@@ -29,113 +31,100 @@
 
 <body>
 
-    <div class="mdl-layout mdl-js-layout transparent-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header transparent-header">
         <div class="overlay"></div>
-        <!-- Transparent waterfall header -->
-        <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
-            <!-- Top row, always visible -->
+        <!-- Transparent header -->
+        <header class="mdl-layout__header mdl-layout__header--transparent">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">ENPH 253 Team 1</span>
+                <h1 id="nav-title">ENPH 253 - Team 1 Final Report</h1>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Challenge</a>
+                    <a class="mdl-navigation__link" href="">Solution</a>
+                    <a class="mdl-navigation__link" href="">Design</a>
+                    <a class="mdl-navigation__link" href="">Prototyping</a>
                 </nav>
             </div>
-            <!-- Bottom row, not visible on scroll -->
-            <div class="mdl-layout__header-row"></div>
         </header>
 
+        <!-- Navigation Drawer -->
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <span class="mdl-layout-title">ENPH 253</span>
+            <span class="mdl-layout-title">Team 1 Final Report</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Challenge</a>
+                <a class="mdl-navigation__link" href="">Solution</a>
+                <a class="mdl-navigation__link" href="">Design</a>
+                <a class="mdl-navigation__link" href="">Prototyping</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
         <main class="mdl-layout__content">
             <div class="container-fluid">
                 <div class="row">
-                    <p>Hello</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h1>Hello</h1>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <div id="team" class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <!-- <h1 style="font-weight: 100; font-size: 30px" class="hidden-lg hidden-md">ENPH 253 - Team 1 Final Report</h1>-->
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col"></div>
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone mdl-cell--4-col-tablet">
+                            <div id="angela">
+                                <h5 class="member-name">Angela Cheng</h5>
+                            </div>
+                            <div class="mdl-tooltip" for="angela">
+                                Did something
+                                <br> I think
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone mdl-cell--4-col-tablet">
+                            <div id="cornell">
+                                <h5 class="member-name">Cornell Lee</h5>
+                            </div>
+                            <div class="mdl-tooltip" for="cornell">
+                                Did something
+                                <br> I think
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone mdl-cell--4-col-tablet">
+                            <div id="andy">
+                                <h5 class="member-name">Andy Tu</h5>
+                            </div>
+                            <div class="mdl-tooltip" for="andy">
+                                Did something
+                                <br> I think
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone mdl-cell--4-col-tablet">
+                            <div id="ivan">
+                                <h5 class="member-name">Ivan Zinin</h5>
+                            </div>
+                            <div class="mdl-tooltip" for="ivan">
+                                Did something
+                                <br> I think
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Footer Content -->
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">ENPH 253 Team 1 Final Report</div>
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Course Website</a>
+                        </li>
+                        <li><a href="#">View on Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
         </main>
     </div>
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

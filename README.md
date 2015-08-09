@@ -1,1 +1,1 @@
-###Git Repo for ENPH 253 Final Report showcase website
+###Git Repo for ENPH 253 Final Report Website
