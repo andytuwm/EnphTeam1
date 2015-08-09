@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.mdl-layout__drawer .mdl-layout-title {
+    font-size: 14px;
+}
+
 #nav-title {
     font-size: 30px;
 }
