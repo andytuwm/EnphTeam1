@@ -9,7 +9,7 @@
     <title>ENPH253 Team 1 Final Report</title>
 
     <!-- Include custom css-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- Roboto -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
     <!-- Material Design Lite css and js -->
@@ -24,6 +24,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Include Gallery.css -->
+    <link rel="stylesheet" href="css/gallery.prefixed.min.css">
+    <link rel="stylesheet" href="css/gallery.theme.css">
 </head>
 
 <body>
@@ -106,12 +110,37 @@
                 <!-- Quick Robot Feature -->
                 <div class="row">
                     <div id="feature" class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--12-col">
+                        <div id="feature-headline-1" class="mdl-cell mdl-cell--12-col">
                             <div id="feature-title" class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Meet Steve.
                                 <br class="mdl-layout--small-screen-only">The Catapulting Robot.</div>
                         </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="gallery autoplay items-3">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
 
+                                <figure class="item">
+                                    <h1>1</h1>
+                                </figure>
+
+                                <figure class="item">
+                                    <h1>2</h1>
+                                </figure>
+
+                                <figure class="item">
+                                    <h1>3</h1>
+                                </figure>
+
+                                <div class="controls" style="font-size:11px;">
+                                    <a href="#item-1" class="control-button">•</a>
+                                    <a href="#item-2" class="control-button">•</a>
+                                    <a href="#item-3" class="control-button">•</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
             </div>

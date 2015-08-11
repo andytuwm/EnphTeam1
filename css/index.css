@@ -8,8 +8,9 @@
     font-size: 14px;
 }
 
-#nav-title {
-    font-size: 30px;
+.gallery {
+    max-height: 400px;
+    width: 100%;
 }
 
 .overlay {
@@ -25,8 +26,12 @@
 
 #feature {
     background: #fafafa;
-    height: 400px;
+    height: 700px;
     width: 100%;
+}
+
+#feature-headline-1 {
+    max-height: 100px;
 }
 
 #feature-title {
@@ -36,13 +41,19 @@
     top: 10px;
 }
 
+#nav-title {
+    font-size: 30px;
+    position: relative;
+    bottom: 5px;
+}
+
 #team {
     height: 400px;
     width: 100%;
 }
 
 .transparent-header {
-    background: url("assets/placeholder(1).jpg") center / cover;
+    background: url("/assets/teamphoto.jpg") center / cover;
 }
 
 .transparent-header .mdl-layout__header,
@@ -58,15 +69,19 @@
     #feature-title {
         font-size: 39px;
     }
+    #nav-title {
+        bottom: 6px;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    #feature-headline-1 {
+        max-height: 120px
+    }
     #feature-title {
         font-size: 30px;
     }
     #nav-title {
-        bottom: 6px;
         font-size: 20px;
-        position: relative;
     }
 }
