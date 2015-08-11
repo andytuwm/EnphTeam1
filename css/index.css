@@ -53,7 +53,7 @@
 }
 
 .transparent-header {
-    background: url("/assets/teamphoto.jpg") center / cover;
+    background: url("../assets/teamphoto.jpg") center / cover;
 }
 
 .transparent-header .mdl-layout__header,
