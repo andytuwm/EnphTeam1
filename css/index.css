@@ -18,8 +18,32 @@
     height: 100%;
 }
 
+.gallery-nav-buttons a {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.gallery-nav-buttons nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.gallery a img {
+    height: 50px;
+}
+
 .nav-divider {
-    width: 700px;
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
 }
 
 .overlay {
@@ -90,6 +114,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .nav-divider {
+        -webkit-box-flex: 8;
+        -webkit-flex: 8;
+        -ms-flex: 8;
+        flex: 8;
+    }
     #feature-headline-1 {
         height: 100px;
     }
@@ -110,7 +140,7 @@
     }
     .transparent-header {
         background: url("../assets/blurryteamphoto.jpg") center / cover;
-        background-position: left -310px bottom -10px;
+        background-position: left -290px bottom -10px;
     }
     #feature-headline-1 {
         height: 95px;
