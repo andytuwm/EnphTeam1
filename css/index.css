@@ -8,6 +8,10 @@
     font-size: 14px;
 }
 
+.feature-headline-1 {
+    height: 64px;
+}
+
 .gallery {
     max-height: 400px;
     width: 100%;
@@ -57,14 +61,34 @@
     z-index: 1;
 }
 
-#feature {
-    background: #fafafa;
+.section-headline {
+    font-size: 45px;
+    opacity: 0.54;
+}
+
+.transparent-header {
+    background: url("../assets/teamphoto.jpg") center / cover;
+}
+
+.transparent-header .mdl-layout__header,
+.transparent-header .mdl-layout__drawer-button,
+.member-name {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+    
+    color: white;
+}
+
+#challenge {
+    background: #eee;
     height: auto;
     width: 100%;
 }
 
-#feature-headline-1 {
-    height: 64px;
+#feature {
+    background: #fafafa;
+    height: auto;
+    width: 100%;
 }
 
 #feature-title {
@@ -96,32 +120,19 @@
     width: 100%;
 }
 
-.transparent-header {
-    background: url("../assets/teamphoto.jpg") center / cover;
-}
-
-.transparent-header .mdl-layout__header,
-.transparent-header .mdl-layout__drawer-button,
-.member-name {
-    /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-    
-    color: white;
-}
-
 .vid-container {
     height: 300px;
 }
 
 @media screen and (max-width: 1024px) {
+    .feature-headline-1 {
+        height: 100px;
+    }
     .nav-divider {
         -webkit-box-flex: 8;
         -webkit-flex: 8;
         -ms-flex: 8;
         flex: 8;
-    }
-    #feature-headline-1 {
-        height: 100px;
     }
     #feature-title {
         font-size: 39px;
@@ -132,23 +143,42 @@
 }
 
 @media screen and (max-width: 480px) {
+    .feature-headline-1 {
+        height: 95px;
+    }
     .gallery .item {
         height: 300px !important;
     }
     .gallery-nav-buttons {
         display: none;
     }
+    .section-headline {
+        font-size: 35px;
+        text-align: center;
+    }
     .transparent-header {
         background: url("../assets/blurryteamphoto.jpg") center / cover;
         background-position: left -290px bottom -10px;
-    }
-    #feature-headline-1 {
-        height: 95px;
     }
     #feature-title {
         font-size: 30px;
     }
     #nav-title {
         font-size: 20px;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    to {
+        opacity: 0;
     }
 }
