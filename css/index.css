@@ -280,10 +280,10 @@
 .fade-in {
     pointer-events: all;
     -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
-    animation: fadeIn 0.5s ease-in 1 forwards;
+    animation: fadeIn 0.3s ease-in 1 forwards;
 }
 
 .fade-out {
     -webkit-animation: fadeOut 0.3s ease-out 1 forwards;
-    animation: fadeOut 0.3s ease-out 1 forwards;
+    animation: fadeOut 0.2s ease-out 1 forwards;
 }
