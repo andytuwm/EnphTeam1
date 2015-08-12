@@ -51,6 +51,13 @@
         }
     }, false);
 
+    var header = document.querySelector('header');
+    var range = 200;
+    window.addEventListener('scroll', function (e) {
+        console.log(e);
+        console.log(window.pageYOffset);
+        console.log(this.scrollY);
 
+    }, true);
 
 })();
