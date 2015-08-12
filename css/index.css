@@ -8,6 +8,73 @@
     font-size: 14px;
 }
 
+.card-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+
+.card-image {
+    -ms-flex-item-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+}
+
+.card-image.mdl-card {
+    background: url('') center / cover;
+    height: 350px;
+    width: 600px;
+}
+
+.card-image > .mdl-card__actions {
+    background: rgba(0, 0, 0, 0.2);
+    height: 52px;
+    padding: 16px;
+}
+
+.card-image__filename {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#challenge-gallery {
+    height: 350px;
+}
+
+#challenge-gallery > div:nth-child(1) {
+    background: url('../assets/challenge/challenge-img-1.jpg') center / cover;
+}
+
+#challenge-gallery > div:nth-child(2) {
+    background: url('../assets/challenge/challenge-img-2.jpg') center / cover;
+}
+
+#challenge-gallery > div:nth-child(3) {
+    background: url('../assets/challenge/challenge-img-3.jpg') center / cover;
+}
+
+#challenge-gallery > div:nth-child(4) {
+    background: url('../assets/challenge/challenge-img-4.jpg') center / cover;
+}
+
+#challenge-gallery > div:nth-child(5) {
+    background: url('../assets/challenge/challenge-img-5.jpg') center / cover;
+}
+
+#challenge-gallery > div:nth-child(6) {
+    background: url('../assets/challenge/challenge-img-6.jpg') center / cover;
+}
+
 .feature-headline-1 {
     height: 64px;
 }
@@ -82,6 +149,7 @@
 #challenge {
     background: #eee;
     height: auto;
+    position: relative;
     width: 100%;
 }
 
@@ -134,6 +202,9 @@
         -ms-flex: 8;
         flex: 8;
     }
+    #challenge-gallery {
+        height: 550px;
+    }
     #feature-title {
         font-size: 39px;
     }
@@ -159,6 +230,9 @@
     .transparent-header {
         background: url("../assets/blurryteamphoto.jpg") center / cover;
         background-position: left -290px bottom -10px;
+    }
+    #challenge-gallery {
+        height: 350px;
     }
     #feature-title {
         font-size: 30px;
