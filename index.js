@@ -1,11 +1,22 @@
 (function () {
+    "use strict";
 
+    // Challenge Section Gallery Event Listener
     var challengeGallery = document.getElementById('challenge-gallery');
     var lastClass = "";
-
-    challengeGallery.addEventListener('click', function () {
-        console.log(event);
+    var challengeClickListener = function () {
         var pcard = document.getElementById('challenge-expanded');
+        if (event.target.id !== "challenge-expanded") {
+            pcard.classList.remove('fade-in');
+            pcard.classList.add('fade-out');
+            document.body.removeEventListener('click', challengeClickListener, false);
+            console.log('clicked outside!');
+        }
+    };
+    challengeGallery.addEventListener('click', function () {
+        var pcard = document.getElementById('challenge-expanded');
+        pcard.classList.remove('fade-out');
+        pcard.classList.add('fade-in');
         if (lastClass.length > 0) {
             pcard.classList.remove(lastClass);
         }
