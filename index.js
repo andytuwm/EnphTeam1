@@ -51,13 +51,13 @@
         }
     }, false);
 
-    var header = document.querySelector('header');
-    var range = 200;
-    window.addEventListener('scroll', function (e) {
-        console.log(e);
-        console.log(window.pageYOffset);
-        console.log(this.scrollY);
-
-    }, true);
+    // Darken the header after some scrolling
+    var header = document.querySelector('header > .mdl-layout__header-row');
+    var range = 400;
+    document.querySelector('main').addEventListener('scroll', function (e) {
+        var val = this.scrollTop / range;
+        val = val < 0.72 ? 0.72 : val;
+        document.querySelector('.overlay').style.opacity = val;
+    }, false);
 
 })();
