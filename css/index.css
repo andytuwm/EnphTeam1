@@ -29,12 +29,6 @@
     opacity: 1;
 }
 
-.card-image.mdl-card {
-    background: url('') center / cover;
-    height: 350px;
-    width: 600px;
-}
-
 .card-image > .mdl-card__actions {
     background: rgba(0, 0, 0, 0.2);
     height: 52px;
@@ -47,32 +41,37 @@
     font-weight: 500;
 }
 
+.card-image.mdl-card {
+    height: 350px;
+    width: 600px;
+}
+
 #challenge-gallery {
     height: 350px;
 }
 
-#challenge-gallery > div:nth-child(1) {
-    background: url('../assets/challenge/challenge-img-1.jpg') center / cover;
+.challenge-img-1 {
+    background: url('../assets/challenge/challenge-img-1.jpg') center / cover !important;
 }
 
-#challenge-gallery > div:nth-child(2) {
-    background: url('../assets/challenge/challenge-img-2.jpg') center / cover;
+.challenge-img-2 {
+    background: url('../assets/challenge/challenge-img-2.jpg') center / cover !important;
 }
 
-#challenge-gallery > div:nth-child(3) {
-    background: url('../assets/challenge/challenge-img-3.jpg') center / cover;
+.challenge-img-3 {
+    background: url('../assets/challenge/challenge-img-3.jpg') center / cover !important;
 }
 
-#challenge-gallery > div:nth-child(4) {
-    background: url('../assets/challenge/challenge-img-4.jpg') center / cover;
+.challenge-img-4 {
+    background: url('../assets/challenge/challenge-img-4.jpg') center / cover !important;
 }
 
-#challenge-gallery > div:nth-child(5) {
-    background: url('../assets/challenge/challenge-img-5.jpg') center / cover;
+.challenge-img-5 {
+    background: url('../assets/challenge/challenge-img-5.jpg') center / cover !important;
 }
 
-#challenge-gallery > div:nth-child(6) {
-    background: url('../assets/challenge/challenge-img-6.jpg') center / cover;
+.challenge-img-6 {
+    background: url('../assets/challenge/challenge-img-6.jpg') center / cover !important;
 }
 
 .feature-headline-1 {
