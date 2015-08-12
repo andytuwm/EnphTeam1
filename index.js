@@ -6,7 +6,8 @@
     var lastClass = "";
     var challengeClickListener = function () {
         var pcard = document.getElementById('challenge-expanded');
-        if (event.target.id !== "challenge-expanded") {
+        console.log(event);
+        if (event.target.offsetParent.id !== "challenge-expanded") {
             pcard.classList.remove('fade-in');
             pcard.classList.add('fade-out');
             document.body.removeEventListener('click', challengeClickListener, false);
@@ -39,7 +40,10 @@
             pcard.classList.add('challenge-img-6');
             lastClass = 'challenge-img-6';
         }
-
+        event.stopPropagation();
+        document.body.addEventListener('click', challengeClickListener, false);
     }, false);
+
+
 
 })();

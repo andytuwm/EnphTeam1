@@ -260,18 +260,25 @@
 }
 
 @-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
     to {
         opacity: 0;
     }
 }
 
 @keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
     to {
         opacity: 0;
     }
 }
 
 .fade-in {
+    pointer-events: all;
     -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
     animation: fadeIn 0.5s ease-in 1 forwards;
 }
