@@ -9,6 +9,7 @@
 }
 
 .card-container {
+    bottom: 1px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -82,7 +83,6 @@
 
 .gallery {
     max-height: 400px;
-    width: 100%;
 }
 
 .gallery .item > img {
@@ -161,8 +161,8 @@
 
 #challenge-gallery {
     height: 350px;
-    position: relative;
     left: 50px;
+    position: relative;
 }
 
 #feature {
@@ -236,6 +236,7 @@
 @media screen and (max-width: 840px) {
     .card-container {
         top: 120px;
+        bottom: 0;
     }
     #challenge-gallery {
         width: auto;
@@ -244,7 +245,7 @@
 
 @media screen and (max-width: 480px) {
     .card-container {
-        top: 160px;
+        top: 200px;
     }
     .feature-headline-1 {
         height: 95px;
@@ -311,12 +312,12 @@
 }
 
 .fade-in {
-    pointer-events: all;
-    -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
+    -webkit-animation: fadeIn 0.3s ease-in 1 forwards;
     animation: fadeIn 0.3s ease-in 1 forwards;
+    pointer-events: all;
 }
 
 .fade-out {
-    -webkit-animation: fadeOut 0.3s ease-out 1 forwards;
+    -webkit-animation: fadeOut 0.2s ease-out 1 forwards;
     animation: fadeOut 0.2s ease-out 1 forwards;
 }
