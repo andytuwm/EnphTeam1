@@ -1,10 +1,16 @@
 (function () {
     "use strict";
 
+    // Only show gallery once the css has loaded
     onloadCSS(gallerycss, function () {
-        console.log("Stylesheet has asynchronously loaded.");
+        console.log("Gallery has loaded.");
         document.querySelector('.gallery').style.opacity = 1;
     });
+    // Ensure gallery does get loaded in case the loadCSS event didn't fire
+    setTimeout(function () {
+        var gal = document.querySelector('.gallery');
+        if (gal.style.opacity === 0) gal.style.opacity = 1;
+    }, 1500);
 
     // Challenge Section Gallery Event Listener
     var challengeGallery = document.getElementById('challenge-gallery');
