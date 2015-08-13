@@ -150,7 +150,7 @@
 }
 
 #challenge {
-    background: #eee;
+    background: #fafafa;
     height: auto;
     position: relative;
     width: 100%;
@@ -167,7 +167,7 @@
 }
 
 #feature {
-    background: #fafafa;
+    background: #eee;
     height: auto;
     width: 100%;
 }
@@ -197,7 +197,7 @@
 }
 
 #solution {
-    background: #fafafa;
+    background: #eee;
     height: auto;
     width: 100%;
 }
