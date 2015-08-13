@@ -2,9 +2,22 @@
     "use strict";
 
     // Only show gallery once the css has loaded
-    onloadCSS(gallerycss, function () {
-        console.log("Gallery has loaded.");
-        document.querySelector('.gallery').style.opacity = 1;
+    var galleryload_flag = false;
+    onloadCSS(gallerycss1, function () {
+        console.log("Gallery 1 has loaded.");
+        if (galleryload_flag == true) {
+            document.querySelector('.gallery').style.opacity = 1;
+        } else {
+            galleryload_flag = true;
+        }
+    });
+    onloadCSS(gallerycss2, function () {
+        console.log("Gallery 2 has loaded.");
+        if (galleryload_flag == true) {
+            document.querySelector('.gallery').style.opacity = 1;
+        } else {
+            galleryload_flag = true;
+        }
     });
     // Ensure gallery does get loaded in case the loadCSS event didn't fire
     setTimeout(function () {
