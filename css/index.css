@@ -154,7 +154,7 @@
 }
 
 #challenge {
-    background: #fafafa;
+    background: #eee;
     height: auto;
     position: relative;
     width: 100%;
@@ -170,8 +170,14 @@
     position: relative;
 }
 
-#feature {
+#design {
     background: #eee;
+    height: auto;
+    width: 100%;
+}
+
+#feature {
+    background: #fafafa;
     height: auto;
     width: 100%;
 }
@@ -201,13 +207,13 @@
 }
 
 #solution {
-    background: #eee;
+    background: #fafafa;
     height: auto;
     width: 100%;
 }
 
 #solution-gallery {
-    background: #eee;
+    background: #fafafa;
     width: 100%;
 }
 
