@@ -9,7 +9,7 @@
     <title>ENPH253 Team 1 Final Report</title>
 
     <script src="js/loadCSS.js"></script>
-    <script src="js/onloadCSS.js"></script>
+
     <!-- Include custom css-->
     <link rel="stylesheet" href="css/index.css">
     <!-- Roboto -->
@@ -17,9 +17,6 @@
     <!-- Material Design Lite css and js -->
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue-red.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js" async></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,14 +24,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Include Gallery.css -->
-    <!--
-    <link rel="stylesheet" href="css/gallery.prefixed.min.css">
-    <link rel="stylesheet" href="css/gallery.theme.css">
--->
     <script>
+        // Include Gallery.css
         var gallerycss1 = loadCSS("css/gallery.prefixed.min.css");
         var gallerycss2 = loadCSS("css/gallery.theme.css");
+        loadCSS("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+        loadCSS("https://fonts.googleapis.com/icon?family=Material+Icons");
     </script>
 </head>
 
@@ -319,6 +314,7 @@
     <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 
     <!-- Site JS -->
+    <script src="js/onloadCSS.js"></script>
     <script src="js/index.js"></script>
 </body>
 
