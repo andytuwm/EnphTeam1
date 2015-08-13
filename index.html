@@ -9,6 +9,7 @@
     <title>ENPH253 Team 1 Final Report</title>
 
     <script src="js/loadCSS.js"></script>
+    <script src="js/onloadCSS.js"></script>
     <!-- Include custom css-->
     <link rel="stylesheet" href="css/index.css">
     <!-- Roboto -->
@@ -32,7 +33,7 @@
     <link rel="stylesheet" href="css/gallery.theme.css">
 -->
     <script>
-        loadCSS("css/gallery.prefixed.min.css");
+        var gallerycss = loadCSS("css/gallery.prefixed.min.css");
         loadCSS("css/gallery.theme.css");
     </script>
 </head>
@@ -121,7 +122,7 @@
                     </div>
                     <!-- Photo Carousel -->
                     <div class="mdl-cell mdl-cell--12-col">
-                        <div class="gallery autoplay items-4">
+                        <div class="gallery autoplay items-4" style="opacity:0;">
                             <div id="item-1" class="control-operator"></div>
                             <div id="item-2" class="control-operator"></div>
                             <div id="item-3" class="control-operator"></div>

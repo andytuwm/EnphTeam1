@@ -1,6 +1,11 @@
 (function () {
     "use strict";
 
+    onloadCSS(gallerycss, function () {
+        console.log("Stylesheet has asynchronously loaded.");
+        document.querySelector('.gallery').style.opacity = 1;
+    });
+
     // Challenge Section Gallery Event Listener
     var challengeGallery = document.getElementById('challenge-gallery');
     var lastClass = "";
