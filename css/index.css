@@ -211,6 +211,14 @@
     width: 100%;
 }
 
+#solution-gallery .mdl-grid {
+    padding: 0;
+}
+
+#solution-gallery .mdl-grid .mdl-cell:first-child {
+    margin: 0;
+}
+
 #solution-gallery .mdl-cell {
     display: -webkit-box;
     display: -webkit-flex;
