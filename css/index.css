@@ -79,6 +79,7 @@
 
 .feature-headline-1 {
     height: 64px;
+    text-align: center;
 }
 
 .gallery {
@@ -157,7 +158,6 @@
 
 #challenge .feature-headline-1 {
     max-height: 70px;
-    text-align: center;
 }
 
 #challenge-gallery {
@@ -194,6 +194,12 @@
     font-size: 30px;
     position: relative;
     bottom: 5px;
+}
+
+#solution {
+    background: #fafafa;
+    height: auto;
+    width: 100%;
 }
 
 #team {
