@@ -8,6 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>ENPH253 Team 1 Final Report</title>
 
+    <script src="js/loadCSS.js"></script>
     <!-- Include custom css-->
     <link rel="stylesheet" href="css/index.css">
     <!-- Roboto -->
@@ -26,8 +27,14 @@
     <![endif]-->
 
     <!-- Include Gallery.css -->
-    <link rel="stylesheet" href="css/gallery.prefixed.min.css" async>
-    <link rel="stylesheet" href="css/gallery.theme.css" async>
+    <!--
+    <link rel="stylesheet" href="css/gallery.prefixed.min.css">
+    <link rel="stylesheet" href="css/gallery.theme.css">
+-->
+    <script>
+        loadCSS("css/gallery.prefixed.min.css");
+        loadCSS("css/gallery.theme.css");
+    </script>
 </head>
 
 <body>
@@ -293,7 +300,7 @@
     <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 
     <!-- Site JS -->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
