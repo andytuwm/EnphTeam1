@@ -84,4 +84,18 @@
         document.querySelector('.overlay').style.opacity = val;
     }, false);
 
+    // Injects youtube video to container on click
+    function injectYT() {
+        var iframe = document.createElement("iframe");
+        console.log(this.childNodes);
+        iframe.setAttribute("src", this.dataset.link + "/?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=0");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("id", "yt-iframe");
+        this.replaceChild(iframe, this.childNodes[1]);
+    }
+    var yt = document.querySelector("#feature-video > .vid-container");
+    yt.addEventListener('click', injectYT, false);
+
+
 })();

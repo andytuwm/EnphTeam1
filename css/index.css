@@ -130,6 +130,17 @@
     height: 50px;
 }
 
+.play-button {
+    background: url("../assets/play.png") no-repeat;
+    height: 72px;
+    left: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    top: 50%;
+    width: 72px;
+}
+
 .nav-divider {
     -webkit-box-flex: 3;
     -webkit-flex: 3;
@@ -170,6 +181,31 @@
     /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
     color: white;
+}
+
+.vid-container {
+    display: block;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 338px;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.vid-thumb {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    bottom: 0;
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
 }
 
 #challenge-gallery .mdl-cell {
@@ -281,8 +317,9 @@
     width: 100%;
 }
 
-.vid-container {
-    height: 300px;
+#yt-iframe {
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (min-width: 1600px) {
