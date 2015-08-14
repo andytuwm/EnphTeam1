@@ -86,18 +86,25 @@ body {
 }
 
 .design-img {
+    display: block;
     max-height: 400px;
+    max-width: 450px;
+    margin: 0 auto 0 auto;
 }
 
 .design-img-centering {
+    /*
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+*/
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .feature-headline-1 {
@@ -252,6 +259,10 @@ body {
 
 #design .feature-headline-1 {
     margin-top: 20px;
+}
+
+#design > .mdl-grid {
+    position: relative;
 }
 
 #design-gallery {
