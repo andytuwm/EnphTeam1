@@ -157,6 +157,18 @@
     color: white;
 }
 
+#challenge-gallery .mdl-cell {
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    margin: 5px;
+}
+
+#challenge-gallery .mdl-cell:hover {
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
 #challenge {
     background: #eee;
     height: auto;
