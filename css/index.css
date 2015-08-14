@@ -80,6 +80,21 @@
     text-align: center;
 }
 
+.design-img {
+    max-height: 400px;
+}
+
+.design-img-centering {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .feature-headline-1 {
     height: 70px;
     text-align: center;
