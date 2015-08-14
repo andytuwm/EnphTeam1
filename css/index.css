@@ -180,6 +180,15 @@
     width: 100%;
 }
 
+#design .feature-headline-1 {
+    margin-top: 20px;
+}
+
+#design-gallery {
+    background: #eee;
+    width: 100%;
+}
+
 #feature {
     background: #fafafa;
     height: auto;
