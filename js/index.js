@@ -88,7 +88,7 @@
     function injectYT() {
         var iframe = document.createElement("iframe");
         console.log(this.childNodes);
-        iframe.setAttribute("src", this.dataset.link + "/?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=0");
+        iframe.setAttribute("src", this.dataset.link + "/?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=0&rel=0");
         iframe.setAttribute("frameborder", "0");
         iframe.setAttribute("allowfullscreen", "");
         iframe.setAttribute("id", "yt-iframe");
