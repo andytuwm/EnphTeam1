@@ -114,6 +114,7 @@ body {
 
 .gallery {
     max-height: 400px;
+    opacity: 0;
 }
 
 .gallery .item > img {
@@ -393,6 +394,9 @@ body {
 @media only screen and (max-width: 480px) {
     .card-container {
         top: 200px;
+    }
+    .gallery {
+        opacity: 1;
     }
     .gallery .item {
         height: 300px !important;
