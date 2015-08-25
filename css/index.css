@@ -102,8 +102,40 @@ body {
     position: relative;
 }
 
+.design-img--description {
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 30px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    width: 70% !important;
+}
+
+.design-img--hover {
+    background: rgba(200, 200, 200, 0.75);
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: opacity 0.1s ease-out;
+    transition: opacity 0.1s ease-out;
+}
+
+.design-img--hover:hover {
+    opacity: 1;
+}
+
 .design-img--nosidemargin {
     margin: 8px 0 8px 0 !important;
+}
+
+.design-img--title {
+    font-size: 50px;
+    max-height: 50px;
+    margin-bottom: 0 !important;
+    margin-top: 5px !important;
+    font-family: "Roboto";
+    opacity: 0.8;
 }
 
 .feature-headline-1 {
@@ -265,6 +297,11 @@ body {
     width: 100%;
 }
 
+#design-item--cat {
+    position: relative;
+    bottom: 15%;
+}
+
 #design .feature-headline-1 {
     margin-top: 20px;
 }
@@ -367,8 +404,9 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-    #feature .feature-headline-1 {
-        height: 100px;
+    .design-img--description {
+        font-size: 17px;
+        line-height: 30px;
     }
     .nav-divider {
         -webkit-box-flex: 8;
@@ -380,6 +418,12 @@ body {
         height: 500px;
         width: 600px;
         left: 20px;
+    }
+    #design-item--cat {
+        bottom: 0;
+    }
+    #feature .feature-headline-1 {
+        height: 100px;
     }
     #feature-title {
         font-size: 39px;
@@ -394,6 +438,14 @@ body {
         top: 120px;
         bottom: 0;
     }
+    .design-img--description {
+        font-size: 14px;
+        line-height: 25px;
+        width: 88% !important;
+    }
+    .design-img--title {
+        font-size: 40px;
+    }
     #challenge-gallery {
         width: auto;
     }
@@ -406,8 +458,17 @@ body {
     .card-container {
         top: 200px;
     }
+    .design-img--description {
+        font-size: 14px;
+        line-height: 22px;
+        width: 92% !important;
+    }
     .design-img--nosidemargin {
         margin: 8px !important;
+    }
+    .design-img--title {
+        font-size: 30px;
+        margin-top: 0 !important;
     }
     .gallery {
         opacity: 1;
