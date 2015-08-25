@@ -279,6 +279,11 @@ body {
     width: 70%;
 }
 
+#design > .mdl-grid:nth-child(2) {
+    padding-left: 8px;
+    padding-right: 24px;
+}
+
 #feature {
     background: #fafafa;
     height: auto;
@@ -392,11 +397,17 @@ body {
     #challenge-gallery {
         width: auto;
     }
+    #design > .mdl-grid {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .card-container {
         top: 200px;
+    }
+    .design-img--nosidemargin {
+        margin: 8px !important;
     }
     .gallery {
         opacity: 1;
@@ -417,6 +428,9 @@ body {
     }
     #challenge-gallery {
         height: 350px;
+    }
+    #design > .mdl-grid:nth-child(2) {
+        padding-right: 8px;
     }
     #feature-title {
         font-size: 30px;
