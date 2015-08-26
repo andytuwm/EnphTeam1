@@ -115,6 +115,7 @@ body {
     background: rgba(240, 240, 240, 0.85);
     height: 100%;
     opacity: 0;
+    padding: 0 !important;
     position: absolute;
     width: 100%;
     -webkit-transition: opacity 0.1s ease-out;
@@ -127,6 +128,17 @@ body {
 
 .design-img--nosidemargin {
     margin: 8px 0 8px 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.design-img--smalltitle {
+    font-size: 30px;
+    max-height: 50px;
+    margin-bottom: 0 !important;
+    margin-top: 5px !important;
+    font-family: "Roboto";
+    opacity: 0.8;
 }
 
 .design-img--title {
@@ -302,6 +314,28 @@ body {
     bottom: 15%;
 }
 
+#design-item--mag {
+    bottom: 0;
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 30px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    position: relative;
+    width: 80% !important;
+}
+
+#design-item--arm {
+    bottom: 0;
+    font-size: 17px;
+    font-family: "Roboto";
+    line-height: 27px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    position: relative;
+    width: 95% !important;
+}
+
 #design .feature-headline-1 {
     margin-top: 20px;
 }
@@ -408,6 +442,9 @@ body {
         font-size: 17px;
         line-height: 30px;
     }
+    .design-img--smalltitle {
+        font-size: 25px;
+    }
     .nav-divider {
         -webkit-box-flex: 8;
         -webkit-flex: 8;
@@ -421,6 +458,15 @@ body {
     }
     #design-item--cat {
         bottom: 0;
+    }
+    #design-item--mag {
+        font-size: 14px;
+        line-height: 27px;
+        width: 90% !important;
+    }
+    #design-item--arm {
+        font-size: 1.5vw;
+        line-height: 2vw;
     }
     #feature .feature-headline-1 {
         height: 100px;
@@ -443,6 +489,9 @@ body {
         line-height: 25px;
         width: 88% !important;
     }
+    .design-img--smalltitle {
+        font-size: 22px;
+    }
     .design-img--title {
         font-size: 40px;
     }
@@ -452,6 +501,19 @@ body {
     #design > .mdl-grid {
         width: 90%;
     }
+    #design-item--mag {
+        font-size: 14px;
+        font-size: 2vw;
+        line-height: 25px;
+        line-height: 4vw;
+        width: 95% !important;
+    }
+    #design-item--arm {
+        font-size: 14px;
+        font-size: 2vw;
+        line-height: 22px;
+        line-height: 3vw;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -459,16 +521,19 @@ body {
         top: 200px;
     }
     .design-img--description {
-        font-size: 14px;
-        line-height: 22px;
-        width: 92% !important;
+        font-size: 13px;
+        line-height: 20px;
+        margin: 0 auto 0 auto !important;
+        width: 95% !important;
     }
     .design-img--nosidemargin {
         margin: 8px !important;
     }
+    .design-img--smalltitle {
+        font-size: 28px;
+    }
     .design-img--title {
-        font-size: 30px;
-        margin-top: 0 !important;
+        font-size: 22px;
     }
     .gallery {
         opacity: 1;
@@ -492,6 +557,23 @@ body {
     }
     #design > .mdl-grid:nth-child(2) {
         padding-right: 8px;
+    }
+    #design-item--arm {
+        font-size: 15px;
+        font-size: 3.5vw;
+        line-height: 25px;
+        line-height: 5vw;
+    }
+    #design-item--mag {
+        font-size: 15px;
+        line-height: 25px;
+        width: 95% !important;
+    }
+    #design-item--tire {
+        font-size: 15px;
+        font-size: 3.5vw;
+        line-height: 25px;
+        line-height: 5vw;
     }
     #feature-title {
         font-size: 30px;
