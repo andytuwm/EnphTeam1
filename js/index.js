@@ -75,6 +75,15 @@
         }
     }, false);
 
+    /* Close nav drawer on select */
+    var navdrawer = document.querySelector(".mdl-layout__drawer");
+    navdrawer.addEventListener("click", function (e) {
+        console.log(e);
+        if (e.target.localName === "a") {
+            navdrawer.classList.remove("is-visible");
+        }
+    }, false);
+
     // Darken the header after some scrolling
     var header = document.querySelector('header > .mdl-layout__header-row');
     var range = 400;
