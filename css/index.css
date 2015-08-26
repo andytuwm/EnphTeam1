@@ -467,6 +467,9 @@ body {
         -ms-flex: 8;
         flex: 8;
     }
+    #challenge-expanded {
+        overflow: visible;
+    }
     #challenge-gallery {
         height: 500px;
         width: 600px;
