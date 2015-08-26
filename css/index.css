@@ -430,6 +430,10 @@ body {
 }
 
 @media only screen and (min-width: 1600px) {
+    .card-image.mdl-card {
+        height: 650px;
+        width: 1200px;
+    }
     .design-img--smalltitle {
         font-size: 40px;
     }
