@@ -1,3 +1,7 @@
+header .mdl-navigation__link {
+    color: whitesmoke !important;
+}
+
 html,
 body {
     line-height: 1 !important;
@@ -195,6 +199,10 @@ body {
     position: absolute;
     top: 50%;
     width: 72px;
+}
+
+.mdl-layout__drawer-button {
+    color: inherit !important;
 }
 
 .nav-divider {
