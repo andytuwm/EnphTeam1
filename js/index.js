@@ -93,6 +93,16 @@
         document.querySelector('.overlay').style.opacity = val;
     }, false);
 
+    /* Lazy load deferred images */
+    var deferredImages = document.querySelectorAll("div[data-deferred-img]");
+    console.log(deferredImages);
+    for (var i = 0; i < deferredImages.length; i++) {
+        var imgsrc = deferredImages[i].dataset.deferredImg;
+        var imgEl = document.createElement("img");
+        imgEl.setAttribute("src", imgsrc);
+        deferredImages[i].parentNode.replaceChild(imgEl, deferredImages[i]);
+    }
+
     // Injects youtube video to container on click
     function injectYT() {
         var iframe = document.createElement("iframe");
