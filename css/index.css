@@ -136,7 +136,7 @@ body {
     font-size: 30px;
     max-height: 50px;
     margin-bottom: 0 !important;
-    margin-top: 5px !important;
+    margin-top: 15px !important;
     font-family: "Roboto";
     opacity: 0.8;
 }
@@ -145,7 +145,7 @@ body {
     font-size: 50px;
     max-height: 50px;
     margin-bottom: 0 !important;
-    margin-top: 5px !important;
+    margin-top: 15px !important;
     font-family: "Roboto";
     opacity: 0.8;
 }

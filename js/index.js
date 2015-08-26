@@ -95,7 +95,6 @@
 
     /* Lazy load deferred images */
     var deferredImages = document.querySelectorAll("div[data-deferred-img]");
-    console.log(deferredImages);
     for (var i = 0; i < deferredImages.length; i++) {
         var imgsrc = deferredImages[i].dataset.deferredImg;
         var classes = deferredImages[i].className;
