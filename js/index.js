@@ -63,7 +63,7 @@
                 lastClass = 'challenge-img-4';
             } else if (event.target.id === 'cg-5') {
                 pcard.classList.add('challenge-img-5');
-                sub.innerHTML = "Inside of the 'burning' building.";
+                sub.innerHTML = "Robots are not allowed to pass through the \"Wall of Fire\" once it is up.";
                 lastClass = 'challenge-img-5';
             } else if (event.target.id === 'cg-6') {
                 pcard.classList.add('challenge-img-6');
