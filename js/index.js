@@ -98,8 +98,12 @@
     console.log(deferredImages);
     for (var i = 0; i < deferredImages.length; i++) {
         var imgsrc = deferredImages[i].dataset.deferredImg;
+        var classes = deferredImages[i].className;
         var imgEl = document.createElement("img");
         imgEl.setAttribute("src", imgsrc);
+        if (classes.length > 0) {
+            imgEl.className = classes;
+        }
         deferredImages[i].parentNode.replaceChild(imgEl, deferredImages[i]);
     }
 
