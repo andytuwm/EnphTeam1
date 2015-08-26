@@ -233,6 +233,7 @@ body {
 }
 
 .section-headline {
+    font-family: "Roboto","Helvetica";
     font-size: 45px;
     opacity: 0.54;
 }
