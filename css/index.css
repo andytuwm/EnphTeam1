@@ -465,11 +465,17 @@ body {
     .design-img--smalltitle {
         font-size: 40px;
     }
+    .description-text {
+        width: 55%;
+    }
     .vid-container {
         padding-bottom: 45.9%;
     }
     #challenge-gallery {
         height: 450px;
+    }
+    #design > .mdl-grid {
+        width: 950px;
     }
 }
 
