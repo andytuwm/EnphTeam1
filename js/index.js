@@ -119,17 +119,8 @@
     var yt = document.querySelector("#feature-video > .vid-container");
     yt.addEventListener('click', injectYT, false);
 
-    // Preload background images in challenge gallery
-    var bgImgs = challengeGallery.children;
+    // Remove div used to preload bacakground images in challenge gallery
     var invisdiv = document.getElementById("challengepreload")
-    for (var i = 0; i < bgImgs.length; i++) {
-        var str = bgImgs[i].style.backgroundImage.match(/"(.*)"/, '')[1].replace(/.jpg/, "-full.jpg");
-        var img = document.createElement('img');
-        img.setAttribute("src", str);
-        console.log(str);
-        invisdiv.appendChild(img);
-    }
-
-    invisdiv.parentNode.removeChild(invisdiv);
+    invisdiv.innerHTML = ""
 
 })();
