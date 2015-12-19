@@ -83,6 +83,16 @@ body {
     font-size: 15px;
     line-height: 23px;
     text-align: center;
+    width: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .design-cat-subtitle {
@@ -316,9 +326,8 @@ body {
 }
 
 #challenge-gallery {
-    height: 350px;
-    left: 50px;
-    position: relative;
+    height: 400px;
+    width: 933px;
 }
 
 #design {
@@ -481,7 +490,6 @@ body {
     }
     #challenge-gallery {
         height: 500px;
-        width: 600px;
         left: 20px;
     }
     #design-item--cat {
